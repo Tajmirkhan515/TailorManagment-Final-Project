@@ -43,16 +43,9 @@ It tracks each order with a specific shelf number for easy storage and retrieval
 > Below are selected screenshots from the application UI.
 
 ### Splash Screen
-![Splash Screen](Assets/screenshots/splash.png)
+![Splash Screen]([Assets/screenshots/splash.png](https://github.com/Tajmirkhan515/TailorManagment-Final-Project/blob/main/splashscreen.png))
 
-### Main Dashboard
-![Main Dashboard](Assets/screenshots/dashboard.png)
 
-### Customer Management
-![Customer Management](Assets/screenshots/customer.png)
-
-### Measurement Entry
-![Measurement Entry](Assets/screenshots/measurement.png)
 
 ---
 
