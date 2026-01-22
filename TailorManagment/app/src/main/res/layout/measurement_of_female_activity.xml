@@ -1,0 +1,1313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#de18b6f2"
+    tools:context="com.tajmirkhan.tailormanagment.MeasurementOfFemale">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/female_toolbar_id"
+        app:theme="@style/MyToolbarTheme"
+        app:popupTheme="@style/MypopUpTheme"
+        >
+    </android.support.v7.widget.Toolbar>
+
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/femal_tabhost_id"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <TabWidget
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+             android:id="@android:id/tabs"
+                ></TabWidget>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@android:id/tabcontent"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/female_tab_shalwar_id"
+                    >
+                    <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+
+                    <android.support.v7.widget.CardView
+                        app:cardCornerRadius="3dp"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+
+                                <LinearLayout
+                                       android:layout_width="match_parent"
+                                       android:layout_height="wrap_content"
+                                       android:orientation="horizontal"
+                                      android:weightSum="8"
+                                       >
+                                    <ImageButton
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/lengthicon"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="7"
+                                        />
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+
+                                        >
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:hint="    Enter Length"
+                                            android:textStyle="bold"
+                                            android:id="@+id/female_shk_length_edt_id"
+                                            android:inputType="numberDecimal"
+                                            />
+
+                                    </android.support.design.widget.TextInputLayout>
+
+
+                                </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="8"
+                            >
+                            <ImageButton
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/lengthicon"
+                                android:layout_gravity="center"
+                                android:layout_weight="7"
+                                />
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+
+                                >
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="    Neck"
+                                    android:id="@+id/female_shk_neck_edt_id"
+
+                                    android:textStyle="bold"
+                                    android:inputType="numberDecimal"
+                                    />
+
+                            </android.support.design.widget.TextInputLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="8"
+                        >
+                        <ImageButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/lengthicon"
+                            android:layout_gravity="center"
+                            android:layout_weight="7"
+                            />
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            >
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="    Shoulder"
+                                android:id="@+id/female_shk_shoulder_edt_id"
+
+                                android:textStyle="bold"
+                                android:inputType="numberDecimal"
+                                />
+
+                        </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="8"
+                                >
+                                <ImageButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/lengthicon"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="7"
+                                    />
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+
+                                    >
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="    Bust"
+                                        android:textStyle="bold"
+                                        android:id="@+id/female_shk_bust_edt_id"
+
+                                        android:inputType="numberDecimal"
+                                        />
+
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="8"
+                                >
+                                <ImageButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/lengthicon"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="7"
+                                    />
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+
+                                    >
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="    waist"
+                                        android:textStyle="bold"
+                                        android:id="@+id/female_shk_waist_edt_id"
+
+                                        android:inputType="numberDecimal"
+                                        />
+
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="8"
+                                >
+                                <ImageButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/lengthicon"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="7"
+                                    />
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+
+                                    >
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="    Hip"
+                                        android:textStyle="bold"
+                                        android:id="@+id/female_shk_hip_edt_id"
+
+                                        android:inputType="numberDecimal"
+                                        />
+
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="8"
+                                >
+                                <ImageButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/lengthicon"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="7"
+                                    />
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+
+                                    >
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="    Border Measurement"
+                                        android:textStyle="bold"
+                                        android:id="@+id/female_shk_borderm_edt_id"
+
+                                        android:inputType="numberDecimal"
+                                        />
+
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="8"
+                                >
+                                <ImageButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/lengthicon"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="7"
+                                    />
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+
+                                    >
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="    Sleeve Length"
+                                        android:textStyle="bold"
+                                        android:inputType="numberDecimal"
+                                        android:id="@+id/female_shk_sleeve_edt_id"
+
+                                        />
+
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="8"
+                                >
+                                <ImageButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/lengthicon"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="7"
+                                    />
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+
+                                    >
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="    Under arm"
+                                        android:textStyle="bold"
+                                        android:inputType="numberDecimal"
+                                        android:id="@+id/female_shk_underarm_edt_id"
+
+                                        />
+
+                                </android.support.design.widget.TextInputLayout>
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="8"
+                                >
+                                <ImageButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/lengthicon"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="7"
+                                    />
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+
+                                    >
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="    Bicep"
+                                        android:textStyle="bold"
+                                        android:inputType="numberDecimal"
+                                        android:id="@+id/female_shk_bicep_edt_id"
+
+                                        />
+
+                                </android.support.design.widget.TextInputLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="8"
+                                >
+                                <ImageButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/lengthicon"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="7"
+                                    />
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+
+                                    >
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="    Wrist"
+                                        android:textStyle="bold"
+                                        android:id="@+id/female_shk_wrist_edt_id"
+
+                                        android:inputType="numberDecimal"
+                                        />
+
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+
+
+
+
+                    <android.support.v7.widget.CardView
+                        app:cardCornerRadius="3dp"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="8"
+                                >
+                                <ImageButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/lengthicon"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="7"
+                                    />
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+
+                                    >
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="    Waist"
+                                        android:textStyle="bold"
+                                        android:id="@+id/female_shalwar_waist_edt_id"
+
+                                        android:inputType="numberDecimal"
+                                        />
+
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="8"
+                                >
+                                <ImageButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/lengthicon"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="7"
+                                    />
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+
+                                    >
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="    Shalwar Length"
+                                        android:textStyle="bold"
+                                        android:id="@+id/female_shk_shalwarlength_edt_id"
+
+                                        android:inputType="numberDecimal"
+                                        />
+
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="8"
+                                >
+                                <ImageButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/lengthicon"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="7"
+                                    />
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+
+                                    >
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="    Bottom"
+                                        android:textStyle="bold"
+                                        android:id="@+id/female_shk_bottom_edt_id"
+
+                                        android:inputType="numberDecimal"
+                                        />
+
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+
+                        <android.support.v7.widget.CardView
+
+                            app:cardCornerRadius="3dp"
+                            android:paddingBottom="@dimen/cardview_compat_inset_shadow"
+                            android:layout_margin="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >  <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="8"
+                            >
+                            <ImageButton
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/description"
+                                android:layout_gravity="top"
+                                android:layout_weight="7"
+                                />
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+
+                                >
+
+                                <EditText
+                                    android:id="@+id/female_shk_description_edt_id"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="    Description"
+                                    android:inputType="textCapSentences|textMultiLine"
+                                    android:maxLength="50"
+                                    android:maxLines="10"
+                                    android:height="100dp"
+                                    android:textStyle="bold" />
+
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+
+
+                    <android.support.v7.widget.CardView
+
+                            app:cardCornerRadius="3dp"
+                            android:paddingBottom="@dimen/cardview_compat_inset_shadow"
+                            android:layout_margin="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                >
+
+                                <Button
+                                    android:id="@+id/female_shk_cancel_btn_id"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:text="Cancel"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true"
+                                    />
+
+                                <Button
+                                    android:id="@+id/female_shk_save_btn_id"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Save"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentEnd="true" />
+
+                            </RelativeLayout>
+                        </android.support.v7.widget.CardView>
+
+
+                    </LinearLayout>
+                </ScrollView>
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/female_tab_pantshirt_id"
+                    android:orientation="vertical"
+                    >
+                    <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                                  >
+
+                    <android.support.v7.widget.CardView
+                        app:cardCornerRadius="3dp"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="8"
+                                >
+                                <ImageButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/lengthicon"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="7"
+                                    />
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+
+                                    >
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="    Bust"
+                                        android:textStyle="bold"
+                                        android:id="@+id/female_shirt_bust_edt_id"
+
+                                        android:inputType="number"
+                                        />
+
+                                </android.support.design.widget.TextInputLayout>
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="8"
+                                >
+                                <ImageButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/lengthicon"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="7"
+                                    />
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+
+                                    >
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="    Waist"
+                                        android:textStyle="bold"
+                                        android:inputType="number"
+                                        android:id="@+id/female_shirt_waist_edt_id"
+
+                                        />
+
+                                </android.support.design.widget.TextInputLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="8"
+                                >
+                                <ImageButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/lengthicon"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="7"
+                                    />
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+
+                                    >
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="    Hip"
+                                        android:textStyle="bold"
+                                        android:id="@+id/female_shirt_hip_edt_id"
+
+                                        android:inputType="number"
+                                        />
+
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="8"
+                                >
+                                <ImageButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/lengthicon"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="7"
+                                    />
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+
+                                    >
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="    Shoulder"
+                                        android:textStyle="bold"
+                                        android:id="@+id/female_shirt_shoulder_edt_id"
+
+                                        android:inputType="number"
+                                        />
+
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="8"
+                                >
+                                <ImageButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/lengthicon"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="7"
+                                    />
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+
+                                    >
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="    Length"
+                                        android:textStyle="bold"
+                                        android:id="@+id/female_shirt_length_edt_id"
+
+                                        android:inputType="number"
+                                        />
+
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="8"
+                                >
+                                <ImageButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/lengthicon"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="7"
+                                    />
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+
+                                    >
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="    Sleeve"
+                                        android:textStyle="bold"
+                                        android:id="@+id/female_shirt_sleeve_edt_id"
+
+                                        android:inputType="number"
+                                        />
+
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="8"
+                                >
+                                <ImageButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/lengthicon"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="7"
+                                    />
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+
+                                    >
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="    Bicep"
+                                        android:textStyle="bold"
+                                        android:id="@+id/female_shirt_bicep_edt_id"
+
+                                        android:inputType="number"
+                                        />
+
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="8"
+                                >
+                                <ImageButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/lengthicon"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="7"
+                                    />
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+
+                                    >
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="    wrist"
+                                        android:textStyle="bold"
+                                        android:id="@+id/female_shirt_wrist_edt_id"
+
+                                        android:inputType="number"
+                                        />
+
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        app:cardCornerRadius="3dp"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="8"
+                                >
+                                <ImageButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/lengthicon"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="7"
+                                    />
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+
+                                    >
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="    Waist"
+                                        android:textStyle="bold"
+                                        android:inputType="number"
+                                        android:id="@+id/female_pant_waist_edt_id"
+
+                                        />
+
+                                </android.support.design.widget.TextInputLayout>
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="8"
+                                >
+                                <ImageButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/lengthicon"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="7"
+                                    />
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+
+                                    >
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="    Thigh at crotch"
+                                        android:textStyle="bold"
+                                        android:id="@+id/female_pant_thigh_edt_id"
+
+                                        android:inputType="number"
+                                        />
+
+                                </android.support.design.widget.TextInputLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="8"
+                                >
+                                <ImageButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/lengthicon"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="7"
+                                    />
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+
+                                    >
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="    Knee"
+                                        android:textStyle="bold"
+                                        android:id="@+id/female_pant_knee_edt_id"
+
+                                        android:inputType="number"
+                                        />
+
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="8"
+                                >
+                                <ImageButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/lengthicon"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="7"
+                                    />
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+
+                                    >
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="    Calf"
+                                        android:textStyle="bold"
+                                        android:id="@+id/female_pant_calf_edt_id"
+
+                                        android:inputType="number"
+                                        />
+
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="8"
+                                >
+                                <ImageButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/lengthicon"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="7"
+                                    />
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+
+                                    >
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="    Ankle"
+                                        android:textStyle="bold"
+                                        android:id="@+id/female_pant_ankle_edt_id"
+
+                                        android:inputType="number"
+                                        />
+
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="8"
+                                >
+                                <ImageButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/lengthicon"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="7"
+                                    />
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+
+                                    >
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="    Inseam"
+                                        android:id="@+id/female_pant_inseam_edt_id"
+
+                                        android:textStyle="bold"
+                                        android:inputType="number"
+                                        />
+
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="8"
+                                >
+                                <ImageButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/lengthicon"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="7"
+                                    />
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+
+                                    >
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="    Waist To crotch"
+                                        android:textStyle="bold"
+                                        android:id="@+id/female_pant_waisttocrotch_edt_id"
+
+                                        android:inputType="number"
+                                        />
+
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="8"
+                                >
+                                <ImageButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/lengthicon"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="7"
+                                    />
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+
+                                    >
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="    Length"
+                                        android:textStyle="bold"
+                                        android:id="@+id/female_pant_length_edt_id"
+
+                                        android:inputType="number"
+                                        />
+
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+
+                            app:cardCornerRadius="3dp"
+                            android:paddingBottom="@dimen/cardview_compat_inset_shadow"
+                            android:layout_margin="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >  <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="8"
+                            >
+                            <ImageButton
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/lengthicon"
+                                android:layout_gravity="center"
+                                android:layout_weight="7"
+                                />
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+
+                                >
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="    Description"
+                                    android:textStyle="bold"
+                                    android:lines="4"
+                                    android:id="@+id/female_pantshirt_description_edt_id"
+
+                                    android:inputType="number"
+                                    />
+
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+
+                        <android.support.v7.widget.CardView
+
+        app:cardCornerRadius="3dp"
+        android:paddingBottom="@dimen/cardview_compat_inset_shadow"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <Button
+                android:id="@+id/female_pantshirt_cancel_btn_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Cancel"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+            <Button
+                android:id="@+id/female_pantshirt_save_btn_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
+
+                </ScrollView>
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+    </TabHost>
+
+
+</LinearLayout>

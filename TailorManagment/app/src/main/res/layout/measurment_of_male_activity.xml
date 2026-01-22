@@ -1,0 +1,2095 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#de18b6f2"
+
+    tools:context="com.tajmirkhan.tailormanagment.MeasurmentOfMale">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar_id"
+        android:background="#de18b6f2"
+        app:theme="@style/MyToolbarTheme"
+        app:popupTheme="@style/MypopUpTheme"
+
+        >
+    </android.support.v7.widget.Toolbar>
+
+    <TabHost
+        android:id="@+id/tabHost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#de18b6f2"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ></TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/ShalwareKameez_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#de18b6f2"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            >
+
+                            <android.support.v7.widget.CardView
+
+                                app:cardCornerRadius="3dp"
+
+                                android:layout_margin="5dp"
+                                android:padding="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                >
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    >
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_marginRight="10dp"
+                                    android:weightSum="5"
+                                    >
+
+                                    <ImageButton
+                                        android:id="@+id/kameezlength_pic_id"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/lengthicon"
+                                        android:onClick="capture"
+                                        android:layout_weight="1"
+                                        android:layout_margin="3dp" />
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="4"
+                                        >
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:hint="    Enter Length"
+                                        android:textStyle="bold"
+                                            android:inputType="numberDecimal"
+                                          android:id="@+id/kameezlength_id"
+                                            />
+
+                                    </android.support.design.widget.TextInputLayout>
+                                </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+
+                                        android:weightSum="5"
+                                        >
+
+                                        <ImageButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="1"
+                                            android:onClick="capture"
+                                            android:layout_margin="3dp"
+                                            android:id="@+id/kameezsleeve_pic_id"
+                                            android:background="@drawable/sleeve" />
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="4"
+                                            >
+
+                                            <EditText
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:hint="     Enter Sleeve"
+                                                android:textStyle="bold"
+                                                android:lines="1"
+                                                android:inputType="numberDecimal"
+                                                android:id="@+id/kameezsleeve_id"
+                                                />
+
+
+                                        </android.support.design.widget.TextInputLayout>
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+
+                                        android:weightSum="5"
+                                        >
+
+                                        <ImageButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="1"
+                                            android:layout_margin="3dp"
+                                            android:onClick="capture"
+                                            android:id="@+id/kameezshoulder_pic_id"
+                                            android:background="@drawable/shouldericon" />
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="4"
+                                            >
+
+                                            <EditText
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:hint="     Enter Shoulder"
+                                                android:lines="1"
+                                                android:id="@+id/kameezshoulder_id"
+                                                android:inputType="numberDecimal"
+                                                />
+
+
+                                        </android.support.design.widget.TextInputLayout>
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+
+                                        android:weightSum="5"
+                                        >
+
+                                        <ImageButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="1"
+                                            android:layout_margin="3dp"
+                                            android:onClick="capture"
+                                            android:id="@+id/kameezchest_pic_id"
+                                            android:background="@drawable/chesticon" />
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="4"
+                                            >
+
+                                            <EditText
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:hint="     Enter Chest"
+                                                android:lines="1"
+                                                android:id="@+id/kameezchest_id"
+                                                android:inputType="numberDecimal"
+                                                />
+
+
+                                        </android.support.design.widget.TextInputLayout>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+
+                                        android:weightSum="5"
+                                        >
+
+                                        <ImageButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="1"
+                                            android:layout_margin="3dp"
+                                            android:onClick="capture"
+                                            android:background="@drawable/minda_icon"
+                                            android:id="@+id/kameezminda_pic_id"
+                                            />
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="4"
+                                            >
+
+                                            <EditText
+                                                android:id="@+id/kameezunderarm_id"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:hint="      underarm"
+                                                android:inputType="numberDecimal"
+                                                />
+
+
+                                        </android.support.design.widget.TextInputLayout>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+
+                                        android:weightSum="5"
+                                        >
+
+                                        <ImageButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="1"
+                                            android:layout_margin="3dp"
+                                            android:onClick="capture"
+                                            android:id="@+id/kameezneck_pic_id"
+                                            android:background="@drawable/neckicon" />
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="4"
+                                            >
+
+                                            <EditText
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:hint="      Enter Neck"
+                                                android:lines="1"
+                                                android:id="@+id/kameezneck_id"
+                                                android:inputType="numberDecimal"
+                                                />
+
+
+                                        </android.support.design.widget.TextInputLayout>
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+
+                                        android:weightSum="5"
+                                        >
+
+                                        <ImageButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="1"
+                                            android:layout_margin="3dp"
+                                            android:onClick="capture"
+                                            android:background="@drawable/waist_icon"
+                                            android:id="@+id/kameezwaist_pic_id"
+                                            />
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="4"
+                                            >
+
+                                            <EditText
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:hint="      waist"
+                                                android:lines="1"
+                                                android:id="@+id/kameezwaist_id"
+                                                android:inputType="numberDecimal"
+                                                />
+
+
+                                        </android.support.design.widget.TextInputLayout>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+
+                                        android:weightSum="5"
+                                        >
+
+                                        <ImageButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="1"
+                                            android:layout_margin="3dp"
+                                            android:onClick="capture"
+                                            android:background="@drawable/width_icon"
+                                            android:id="@+id/kameezwidth_pic_id"
+                                            />
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="4"
+                                            >
+
+                                            <EditText
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:hint="      Width"
+                                                android:lines="1"
+                                                android:id="@+id/kameezwidth_id"
+                                                android:inputType="numberDecimal"
+                                                />
+
+
+                                        </android.support.design.widget.TextInputLayout>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+
+                                        android:weightSum="5"
+                                        >
+
+                                        <ImageButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="1"
+                                            android:layout_margin="3dp"
+                                            android:onClick="capture"
+                                            android:background="@drawable/abdomen_icon"
+                                            android:id="@+id/kameezabdomen_pic_id"
+                                            />
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="4"
+                                            >
+
+                                            <EditText
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:hint="      abdomen"
+                                                android:id="@+id/kameezabdomen_id"
+                                                android:inputType="numberDecimal"
+                                                />
+
+
+                                        </android.support.design.widget.TextInputLayout>
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+
+                                        android:weightSum="5"
+                                        >
+
+                                        <ImageButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="1"
+                                            android:layout_margin="3dp"
+                                            android:onClick="capture"
+                                            android:background="@drawable/bicep"
+                                            android:id="@+id/kameezbicep_pic_id"
+                                            />
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="4"
+                                            >
+
+                                            <EditText
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:hint="      Bicep"
+                                                android:id="@+id/kameezbicep_id"
+                                                android:inputType="numberDecimal"
+                                                />
+
+
+                                        </android.support.design.widget.TextInputLayout>
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+
+                                        android:weightSum="5"
+                                        >
+
+                                        <ImageButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="1"
+                                            android:layout_margin="3dp"
+                                            android:onClick="capture"
+                                            android:background="@drawable/lengthofwristicon"
+                                            android:id="@+id/kameezlengthofwristwrist_pic_id"
+                                            />
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="4"
+                                            >
+
+                                            <EditText
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:hint="      Length of Wrist"
+                                                android:id="@+id/kameezwrist_id"
+                                                android:inputType="numberDecimal" />
+
+
+                                        </android.support.design.widget.TextInputLayout>
+
+                                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+                                </LinearLayout>
+
+                            </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <android.support.v7.widget.CardView
+
+                                app:cardCornerRadius="3dp"
+                                android:paddingBottom="@dimen/cardview_compat_inset_shadow"
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                >
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    >
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+
+                                        android:weightSum="5"
+                                        >
+
+                                        <ImageButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="1"
+                                            android:layout_margin="3dp"
+                                            android:onClick="capture"
+                                            android:id="@+id/shalwarlength_pic_id"
+                                            android:background="@drawable/trouserlength" />
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="4"
+                                            >
+
+                                            <EditText
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:hint="      Trouser length"
+                                                android:id="@+id/shalwarlength_id"
+                                                android:inputType="numberDecimal"/>
+
+
+                                        </android.support.design.widget.TextInputLayout>
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+
+                                        android:weightSum="5"
+                                        >
+
+                                        <ImageButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="1"
+                                            android:layout_margin="3dp"
+                                            android:onClick="capture"
+                                            android:id="@+id/shalwarwaist_pic_id"
+
+                                            android:background="@drawable/trouserwaisticon" />
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="4"
+                                            >
+
+                                            <EditText
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:hint="      Trouser Waist"
+                                                android:id="@+id/shalwarwaist_id"
+                                                android:inputType="numberDecimal" />
+
+
+                                        </android.support.design.widget.TextInputLayout>
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+
+                                        android:weightSum="5"
+                                        >
+
+                                        <ImageButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="1"
+                                            android:onClick="capture"
+                                            android:layout_margin="3dp"
+                                            android:background="@drawable/pancha"
+                                            android:id="@+id/shalwarpancha_pic_id"
+                                            />
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="4"
+                                            >
+
+                                            <EditText
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:hint="      pancha"
+                                                android:id="@+id/shalwarpancha_id"
+                                                android:inputType="numberDecimal" />
+
+
+                                        </android.support.design.widget.TextInputLayout>
+
+                                    </LinearLayout>
+
+
+
+
+
+
+
+                                </LinearLayout>
+
+                            </android.support.v7.widget.CardView>
+
+
+
+
+
+                            <android.support.v7.widget.CardView
+
+                                app:cardCornerRadius="3dp"
+                                android:paddingBottom="@dimen/cardview_compat_inset_shadow"
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                >
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    >
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+
+                                    >
+                                    <ImageButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="3dp"
+                                        android:onClick="capture"
+                                        android:id="@+id/shalwarkameezben_pic_id"
+                                        android:background="@drawable/ben_icon"
+                                        />
+                                    <RadioGroup
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:orientation="horizontal"
+                                        android:id="@+id/shalwarkameez_ben_collar_rdg_id"
+                                        >
+
+                                        <RadioButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Bin"
+                                            android:id="@+id/shalwarkameez_ben_id"
+
+                                            />
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+
+                                            android:layout_height="fill_parent"
+                                            android:background="@drawable/coller_icon"
+                                            android:layout_marginLeft="5dp"
+                                            android:onClick="capture"
+                                            android:id="@+id/shalwarkameezcollar_pic_id"
+                                            />
+                                        <RadioButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Collar"
+                                            android:id="@+id/shalwarkameez_collar_id"
+                                            />
+
+                                    </RadioGroup>
+
+
+
+
+                                </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+                                        >
+                                        <ImageButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="3dp"
+                                            android:onClick="capture"
+                                            android:id="@+id/kameezfrontpacket_pic_id"
+                                            android:background="@drawable/front_pocket_icon"
+                                            />
+                                        <RadioGroup
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:orientation="horizontal"
+                                            android:id="@+id/shalwarkameez_frontpacket_rdg_id"
+                                            >
+
+
+                                            <TextView
+                                                android:layout_marginLeft="10dp"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="  Front Packet"
+
+
+                                                />
+                                            <RadioButton
+                                                android:layout_marginLeft="10dp"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Yes"
+                                                android:id="@+id/kameez_front_yes_id"
+
+                                                />
+
+                                            <RadioButton
+                                                android:layout_marginLeft="10dp"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="NO"
+                                                android:id="@+id/kameez_front_no_id"
+                                                />
+
+                                        </RadioGroup>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+                                        >
+                                        <ImageButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="3dp"
+                                            android:id="@+id/shalwarpacket_pic_id"
+                                            android:background="@drawable/shalwarpacketicon"
+                                            />
+                                        <RadioGroup
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:orientation="horizontal"
+                                            android:id="@+id/shalwar_packet_rdg_id"
+                                            >
+
+
+                                            <TextView
+                                                android:layout_marginLeft="10dp"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Shalware Packet"
+
+                                                />
+                                            <RadioButton
+                                                android:layout_marginLeft="10dp"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Yes"
+                                                android:id="@+id/shalwar_pocket_yes_id"
+
+                                                />
+
+                                            <RadioButton
+                                                android:layout_marginLeft="10dp"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="NO"
+                                                android:id="@+id/shalwar_pocket_no_id"
+                                                />
+
+                                        </RadioGroup>
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+                                        >
+                                        <ImageButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="3dp"
+                                            android:background="@drawable/side_poket_icon"
+                                            android:id="@+id/kameezsidepacket_pic_id"
+                                            />
+                                        <RadioGroup
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:orientation="horizontal"
+                                            android:id="@+id/kameez_side_packet_rdg_id"
+                                            >
+
+                                            <TextView
+                                                android:layout_marginLeft="10dp"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Side Packet"
+                                                android:id="@+id/sidepacket_id"
+
+                                                />
+                                            <RadioButton
+                                                android:layout_marginLeft="5dp"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="No"
+                                                android:id="@+id/kameez_side_packet_no_id"
+                                                />
+                                            <RadioButton
+                                                android:layout_marginLeft="5dp"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="X"
+                                                android:id="@+id/kameez_side_packet_x_id"
+
+                                                />
+
+                                            <RadioButton
+                                                android:layout_marginLeft="5dp"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="XX"
+                                                android:id="@+id/kameez_side_packet_xx_id"
+                                                />
+
+                                        </RadioGroup>
+
+                                    </LinearLayout>
+
+
+
+
+
+
+                                </LinearLayout>
+
+                            </android.support.v7.widget.CardView>
+
+
+                            <android.support.v7.widget.CardView
+
+                                app:cardCornerRadius="3dp"
+                                android:paddingBottom="@dimen/cardview_compat_inset_shadow"
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                >
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    >
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+
+                                        android:weightSum="5"
+                                        >
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+                                        <ImageButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="1"
+                                            android:layout_margin="3dp"
+                                            android:background="@drawable/description"
+                                            android:id="@+id/description_pic_id"
+                                            />
+                                        </LinearLayout>
+                                         <LinearLayout
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content">
+                                        <android.support.design.widget.TextInputLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="4"
+                                            >
+
+                                            <EditText
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:hint="      Write Description"
+                                                android:inputType="textCapSentences|textMultiLine"
+                                                android:maxLength="50"
+                                                android:maxLines="10"
+                                                android:height="100dp"
+                                                android:id="@+id/shalwarkameezdescription_id"
+                                                />
+
+
+                                        </android.support.design.widget.TextInputLayout>
+                                         </LinearLayout>
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+                            </android.support.v7.widget.CardView>
+
+
+
+
+                            <android.support.v7.widget.CardView
+
+                            app:cardCornerRadius="3dp"
+                            android:paddingBottom="@dimen/cardview_compat_inset_shadow"
+                            android:layout_margin="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            >
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+
+                                    >
+
+                                    <Button
+                                        android:id="@+id/cancel_btn_id"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                        android:text="Cancel"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        />
+
+                                    <Button
+                                        android:id="@+id/shalwarkameez_save_btn_id"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Save"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentEnd="true" />
+
+                                </RelativeLayout>
+                            </android.support.v7.widget.CardView>
+
+
+
+
+
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+
+
+
+
+
+
+
+              <!-- the shalwar kameez Screen is finished -->
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#de18b6f2"
+                    android:orientation="vertical"
+                    >
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            >
+
+                            <android.support.v7.widget.CardView
+
+                                app:cardCornerRadius="3dp"
+
+                                android:layout_margin="5dp"
+                                android:padding="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                >
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    >
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:layout_marginRight="10dp"
+                                        android:weightSum="5"
+                                        >
+
+                                        <ImageButton
+                                            android:id="@+id/shirtneck_pic_id"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:background="@drawable/neckicon"
+                                            android:onClick="capture"
+                                            android:layout_weight="1"
+                                            android:layout_margin="3dp" />
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="4"
+                                            >
+                                            <EditText
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:hint="    Enter Neck"
+                                                android:inputType="numberDecimal"
+                                                android:id="@+id/shirtneck_id"
+                                                />
+
+                                        </android.support.design.widget.TextInputLayout>
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+
+                                        android:weightSum="5"
+                                        >
+
+                                        <ImageButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="1"
+                                            android:layout_margin="3dp"
+                                            android:onClick="capture"
+
+                                            android:id="@+id/shirtchest_pic_id"
+                                            android:background="@drawable/chesticon" />
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="4"
+                                            >
+
+                                            <EditText
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:hint="     Enter Chest"
+                                                android:lines="1"
+                                                android:id="@+id/shirtchest_id"
+                                                android:inputType="numberDecimal" />
+
+
+                                        </android.support.design.widget.TextInputLayout>
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+
+                                        android:weightSum="5"
+                                        >
+
+                                        <ImageButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="1"
+                                            android:layout_margin="3dp"
+                                            android:onClick="capture"
+
+                                            android:id="@+id/shirtshoulder_pic_id"
+                                            android:background="@drawable/shouldericon" />
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="4"
+                                            >
+
+                                            <EditText
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:hint="     Enter Shoulder"
+                                                android:lines="1"
+                                                android:id="@+id/shirtshoulder_id"
+                                                android:inputType="numberDecimal" />
+
+
+                                        </android.support.design.widget.TextInputLayout>
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+
+                                        android:weightSum="5"
+                                        >
+
+                                        <ImageButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="1"
+                                            android:layout_margin="3dp"                                            android:onClick="capture"
+
+                                            android:id="@+id/shirtslevee_pic_id"
+                                            android:background="@drawable/sleeve" />
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="4"
+                                            >
+
+                                            <EditText
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:hint="      Enter sleeve"
+                                                android:lines="1"
+                                                android:id="@+id/shirtsleeve_id"
+                                                android:inputType="numberDecimal" />
+
+
+                                        </android.support.design.widget.TextInputLayout>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+
+                                        android:weightSum="5"
+                                        >
+
+                                        <ImageButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="1"
+                                            android:layout_margin="3dp"
+                                            android:id="@+id/shirtbicep_pic_id"
+                                            android:background="@drawable/bicep"
+                                            android:onClick="capture"
+                                            />
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="4"
+                                            >
+
+                                            <EditText
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:hint="      Enter Bicep"
+                                                android:lines="1"
+                                                android:id="@+id/shirtbicep_id"
+                                                android:inputType="numberDecimal"/>
+
+
+                                        </android.support.design.widget.TextInputLayout>
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+
+                                        android:weightSum="5"
+                                        >
+
+                                        <ImageButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="1"
+                                            android:layout_margin="3dp"
+                                            android:background="@drawable/lengthofwristicon"
+                                            android:id="@+id/shirtlenthofwrist_pic_id"
+                                            android:onClick="capture"
+
+                                            />
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="4"
+                                            >
+
+                                            <EditText
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:hint="      Length of wrist"
+                                                android:lines="1"
+                                                android:id="@+id/shirtwrist_id"
+                                                android:inputType="numberDecimal" />
+
+
+                                        </android.support.design.widget.TextInputLayout>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+
+                                        android:weightSum="5"
+                                        >
+
+                                        <ImageButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="1"
+                                            android:layout_margin="3dp"
+                                            android:background="@drawable/abdomen_icon"
+                                            android:id="@+id/shirtjocketwaist_pic_id"
+                                            android:onClick="capture"
+
+                                            />
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="4"
+                                            >
+
+                                            <EditText
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:hint="     Enter Jocket waist"
+                                                android:lines="1"
+                                                android:id="@+id/shirtjoecktwaist_id"
+                                                android:inputType="numberDecimal"/>
+
+
+                                        </android.support.design.widget.TextInputLayout>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+
+                                        android:weightSum="5"
+                                        >
+
+                                        <ImageButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="1"
+                                            android:layout_margin="3dp"
+                                            android:background="@drawable/hipicon"
+                                            android:id="@+id/shirthip_pic_id"
+                                            android:onClick="capture"
+
+                                            />
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="4"
+                                            >
+
+                                            <EditText
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:hint="      Enter Hip"
+                                                android:id="@+id/shirthip_id"
+                                                android:inputType="numberDecimal" />
+
+
+                                        </android.support.design.widget.TextInputLayout>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+
+                                        android:weightSum="5"
+                                        >
+
+                                        <ImageButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="1"
+                                            android:layout_margin="3dp"
+                                            android:background="@drawable/lengthicon"
+                                            android:id="@+id/shirtlength_pic_id"
+                                            android:onClick="capture"
+
+                                            />
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="4"
+                                            >
+
+                                            <EditText
+                                                android:id="@+id/shirtlength_id"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:hint="      Enter Length"
+                                                android:inputType="numberDecimal"/>
+
+
+                                        </android.support.design.widget.TextInputLayout>
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+
+                                        android:weightSum="5"
+                                        >
+
+                                        <ImageButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="1"
+                                            android:layout_margin="3dp"
+                                            android:background="@drawable/waist_icon"
+                                            android:id="@+id/shirtwasit_pic_id"
+                                            android:onClick="capture"
+
+                                            />
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="4"
+                                            >
+
+                                            <EditText
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:hint="      Enter waist"
+                                                android:id="@+id/shirtwaist_id"
+                                                android:inputType="numberDecimal" />
+
+
+                                        </android.support.design.widget.TextInputLayout>
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+
+                                        android:weightSum="5"
+                                        >
+
+                                        <ImageButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="1"
+                                            android:layout_margin="3dp"
+                                            android:onClick="capture"
+
+                                            android:background="@drawable/halfshoulder_icon"
+                                            android:id="@+id/shirthalfshoulder_pic_id"
+                                            />
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="4"
+                                            >
+
+                                            <EditText
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:hint="      Enter Half shoulder"
+                                                android:id="@+id/shirthalfshoulder_id"
+                                                android:inputType="numberDecimal" />
+
+
+                                        </android.support.design.widget.TextInputLayout>
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+
+                                        android:weightSum="5"
+                                        >
+
+                                        <ImageButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="1"
+                                            android:layout_margin="3dp"
+                                            android:background="@drawable/backfulllengthicon"
+                                            android:id="@+id/shirtbackfulllength_pic_id"
+                                            android:onClick="capture"
+
+                                            />
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="4"
+                                            >
+
+                                            <EditText
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:hint="   Enter Back full Length "
+                                                android:id="@+id/shirtbackfulllength_id"
+                                                android:inputType="numberDecimal" />
+
+
+                                        </android.support.design.widget.TextInputLayout>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+
+                                        android:weightSum="5"
+                                        >
+
+                                        <ImageButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="1"
+                                            android:layout_margin="3dp"
+                                            android:background="@drawable/backhalflength"
+                                            android:id="@+id/shirtbackhalflength_pic_id"
+                                            android:onClick="capture"
+
+                                            />
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="4"
+                                            >
+
+                                            <EditText
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:hint="      Half Back length"
+                                                android:id="@+id/shirtbackhalflength_id"
+                                                android:inputType="numberDecimal"/>
+
+
+                                        </android.support.design.widget.TextInputLayout>
+
+                                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+                                </LinearLayout>
+
+                            </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <android.support.v7.widget.CardView
+
+                                app:cardCornerRadius="3dp"
+                                android:paddingBottom="@dimen/cardview_compat_inset_shadow"
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                >
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    >
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+
+                                        android:weightSum="5"
+                                        >
+
+                                        <ImageButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="1"
+                                            android:layout_margin="3dp"
+                                            android:id="@+id/pantwaist_pic_id"
+                                            android:background="@drawable/trouserwaisticon"
+                                            android:onClick="capture"
+                                            />
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="4"
+                                            >
+
+                                            <EditText
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:hint="      pant waist"
+                                                android:id="@+id/pantwaist_id"
+                                                android:inputType="numberDecimal"/>
+
+
+                                        </android.support.design.widget.TextInputLayout>
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+
+                                        android:weightSum="5"
+                                        >
+
+                                        <ImageButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="1"
+                                            android:layout_margin="3dp"
+                                            android:id="@+id/pantlength_pic_id"
+                                            android:onClick="capture"
+
+                                            android:background="@drawable/trouserlength" />
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="4"
+                                            >
+
+                                            <EditText
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:hint="      Trouser Length"
+                                                android:id="@+id/pantlength_id"
+                                                android:inputType="numberDecimal"/>
+
+
+                                        </android.support.design.widget.TextInputLayout>
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+
+                                        android:weightSum="5"
+                                        >
+
+                                        <ImageButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="1"
+                                            android:layout_margin="3dp"
+                                            android:background="@drawable/insidepant_icon"
+                                            android:id="@+id/pantinsidelength_pic_id"
+                                            android:onClick="capture"
+
+                                            />
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="4"
+                                            >
+
+                                            <EditText
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:hint="      pant inside length"
+                                                android:id="@+id/pantinsidelength_id"
+                                                android:inputType="numberDecimal" />
+
+
+                                        </android.support.design.widget.TextInputLayout>
+
+                                    </LinearLayout>
+
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+
+                                        android:weightSum="5"
+                                        >
+
+                                        <ImageButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="1"
+                                            android:layout_margin="3dp"
+                                            android:background="@drawable/croach_icon"
+                                            android:id="@+id/pantcrotch_pic_id"
+                                            android:onClick="capture"
+
+                                            />
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="4"
+                                            >
+
+                                            <EditText
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:hint="      pant Crotch"
+                                                android:id="@+id/pantcrotch_id"
+                                                android:inputType="numberDecimal"/>
+
+
+                                        </android.support.design.widget.TextInputLayout>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+
+                                        android:weightSum="5"
+                                        >
+
+                                        <ImageButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="1"
+                                            android:layout_margin="3dp"
+                                            android:background="@drawable/thighicon"
+                                            android:id="@+id/pantthigh_pic_id"
+                                            android:onClick="capture"
+
+                                            />
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="4"
+                                            >
+
+                                            <EditText
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:hint="      pant thigh"
+                                                android:id="@+id/pantthigh_id"
+                                                android:inputType="numberDecimal" />
+
+
+                                        </android.support.design.widget.TextInputLayout>
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+
+                                        android:weightSum="5"
+                                        >
+
+                                        <ImageButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="fill_parent"
+                                            android:layout_weight="1"
+                                            android:layout_margin="3dp"
+                                            android:background="@drawable/knee_icon"
+                                            android:id="@+id/pantknee_pic_id"
+                                            android:onClick="capture"
+
+                                            />
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="4"
+                                            >
+
+                                            <EditText
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:hint="      pant knee"
+                                                android:id="@+id/pantknee_id"
+                                                android:inputType="numberDecimal" />
+
+
+                                        </android.support.design.widget.TextInputLayout>
+
+                                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                </LinearLayout>
+
+                            </android.support.v7.widget.CardView>
+
+
+
+
+
+                            <android.support.v7.widget.CardView
+
+                                app:cardCornerRadius="3dp"
+                                android:paddingBottom="@dimen/cardview_compat_inset_shadow"
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                >
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    >
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+
+                                        >
+
+                                        <ImageButton
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:background="@drawable/ben_icon"
+                                            android:id="@+id/shirt_rd_bin_pic_id"
+                                            android:onClick="capture"
+
+                                            />
+
+                                        <RadioGroup
+
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:orientation="horizontal"
+                                            android:id="@+id/pantshirt_collar_bin_rd_id"
+                                            >
+                                            <RadioButton
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Bin"
+                                                android:id="@+id/shirt_rd_bin_id"
+
+                                                />
+                                            <ImageView
+                                                android:layout_width="wrap_content"
+
+                                                android:layout_height="fill_parent"
+                                                android:id="@+id/shirt_rd_collar_pic_id"
+                                                android:background="@drawable/coller_icon"
+                                                android:layout_marginLeft="5dp"
+                                                android:onClick="capture"
+
+                                                />
+                                            <RadioButton
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Collar"
+                                                android:id="@+id/shirt_rd_collar_id"
+                                                />
+
+                                        </RadioGroup>
+
+
+
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+                                        >
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:background="@drawable/front_pocket_icon"
+                                            android:id="@+id/shirt_frontpacket_rdio_pic_id"
+                                            android:onClick="capture"
+
+                                            />
+
+
+                                        <RadioGroup
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:id="@+id/shirt_frontpacket_rg_id"
+                                            android:orientation="horizontal"
+                                            >
+
+                                            <TextView
+                                                android:layout_marginLeft="10dp"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text=" Front Packet"
+
+                                                />
+                                            <RadioButton
+                                                android:layout_marginLeft="5dp"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="NO"
+                                                android:id="@+id/shirt_frontpacket_radio_no_id"
+
+                                                />
+
+                                            <RadioButton
+                                                android:layout_marginLeft="5dp"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="X"
+                                                android:id="@+id/shirt_frontpacket_radio_x_id"
+
+                                                />
+
+                                            <RadioButton
+                                                android:layout_marginLeft="5dp"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="XX"
+                                                android:id="@+id/shirt_frontpacket_radio_xx_id"
+
+                                                />
+
+                                        </RadioGroup>
+
+                                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+                                </LinearLayout>
+
+                            </android.support.v7.widget.CardView>
+
+
+                            <android.support.v7.widget.CardView
+
+                                app:cardCornerRadius="3dp"
+                                android:paddingBottom="@dimen/cardview_compat_inset_shadow"
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                >
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    >
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"
+
+                                        android:weightSum="5"
+                                        >
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+                                            <ImageButton
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="fill_parent"
+                                                android:layout_weight="1"
+                                                android:layout_margin="3dp"
+                                                android:background="@drawable/description"
+                                                android:id="@+id/pantdescription_pic_id"
+                                                />
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+                                            <android.support.design.widget.TextInputLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="4"
+                                                >
+
+                                                <EditText
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:hint="      Write Description"
+                                                    android:inputType="textCapSentences|textMultiLine"
+                                                    android:maxLength="50"
+                                                    android:maxLines="10"
+                                                    android:height="100dp"
+                                                    android:id="@+id/pantdescription_id"
+                                                    />
+
+
+                                            </android.support.design.widget.TextInputLayout>
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+                            </android.support.v7.widget.CardView>
+
+
+
+                            <android.support.v7.widget.CardView
+
+                                app:cardCornerRadius="3dp"
+                                android:paddingBottom="@dimen/cardview_compat_inset_shadow"
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                >
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+
+                                    >
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Cancel"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_alignParentLeft="true"
+                                        />
+
+                                    <Button
+                                        android:layout_marginLeft="100dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/pantshirt_save_btn_id"
+                                        android:text="Save"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_alignParentRight="true"
+                                        />
+
+                                </RelativeLayout>
+                            </android.support.v7.widget.CardView>
+
+
+
+
+
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

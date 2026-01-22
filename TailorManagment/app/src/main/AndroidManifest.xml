@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tajmirkhan.tailormanagment">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <uses-library
+        android:name="com.google.android.things"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".MaleClass" />
+        <activity android:name=".MeasurmentOfMale" />
+        <activity android:name=".InsertNewCustomerMale" />
+        <activity android:name=".ViewAllCustomer" />
+        <activity android:name=".UpdateDesign" />
+        <activity android:name=".AddPhotoOfMale" />
+        <activity android:name=".ShalwarK_ShowAllInformation" />
+        <activity android:name=".PantShirt_ShowAllInformation" />
+        <activity android:name=".NewOrder" />
+        <activity android:name=".View_Order" />
+        <activity android:name=".Female_class" />
+        <activity android:name=".InsertNewCustomerFemale" />
+        <activity android:name=".MeasurementOfFemale" />
+        <activity android:name=".Female_ViewAllCustomer" />
+        <activity android:name=".FemaleUpdateDesign" />
+        <activity android:name=".AddPhotoOfFemale" />
+        <activity android:name=".FemaleNewOrder" />
+        <activity android:name=".Female_ViewOrder" />
+
+        <service android:name=".MaleServiceClass" />
+
+        <activity
+            android:name=".Details_ViewOrderOfMale"
+            android:label="@string/title_activity_details__view_order_of_male"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

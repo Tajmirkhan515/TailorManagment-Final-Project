@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tajmirkhan.tailormanagment.FemaleUpdateDesign">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar_id"
+        android:background="#de18b6f2"
+        app:theme="@style/MyToolbarTheme"
+        app:popupTheme="@style/MypopUpTheme"
+        >
+
+
+    </android.support.v7.widget.Toolbar>
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gridview_id"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="5dp"
+        android:numColumns="auto_fit"
+        android:focusable="true"
+        android:clickable="true"
+        >
+
+    </GridView>
+</LinearLayout>

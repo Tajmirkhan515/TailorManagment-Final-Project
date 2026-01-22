@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shop"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.tajmirkhan.tailormanagment.Details_ViewOrderOfMale">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/appbar_id"
+        android:fitsSystemWindows="true"
+
+        ><android.support.design.widget.CollapsingToolbarLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_scrollFlags="exitUntilCollapsed|scroll"
+        app:contentScrim="#de18b6f2"
+        app:title="Details"
+        app:theme="@style/MyToolbarTheme"
+        app:popupTheme="@style/MypopUpTheme"
+        android:id="@+id/collapsingtoolbar_id"
+        app:expandedTitleMarginStart="46dp"
+        app:expandedTitleMarginEnd="20dp"
+        android:fitsSystemWindows="true"
+        >
+        <ImageView
+            android:id="@+id/image_between_collapsing_ti"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:fitsSystemWindows="true"
+            app:layout_collapseMode="pin" />
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/toolbar_id"
+            app:layout_collapseMode="pin"
+            app:theme="@style/MyToolbarTheme"
+            app:popupTheme="@style/MypopUpTheme"
+
+            ></android.support.v7.widget.Toolbar>
+    </android.support.design.widget.CollapsingToolbarLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="7"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.50"
+                    />
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#602B608A"
+                    app:cardElevation="5dp"
+                    app:cardMaxElevation="3dp"
+
+                    app:cardUseCompatPadding="true"
+                    app:cardPreventCornerOverlap="true"
+                    android:layout_weight="1.95"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:id="@+id/customer_icon_id"
+                         android:background="@drawable/customer_icon_id_name"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="id"
+                            android:layout_gravity="center"
+                            android:id="@+id/id_id"
+                            android:textColor="#ffffff"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Name:"
+                            android:layout_gravity="center"
+
+                            android:id="@+id/name_id"
+                            android:textColor="#ffffff"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Phone:"
+                            android:layout_gravity="center"
+
+                            android:id="@+id/phone_id"
+                            android:textColor="#ffffff"
+
+                            />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".10"
+                    />
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#602B608A"
+                    app:cardElevation="5dp"
+                    app:cardMaxElevation="3dp"
+                    app:cardUseCompatPadding="true"
+                    app:cardPreventCornerOverlap="true"
+                    android:layout_weight="1.95"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/money_iconn"
+                            android:layout_gravity="center"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Totla order"
+                            android:id="@+id/order_id"
+                            android:textColor="#ffffff"
+                            android:layout_gravity="center"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Per Sout"
+                            android:id="@+id/per_sout_id"
+                            android:textColor="#ffffff"
+                            android:layout_gravity="center"
+
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="total cost"
+                            android:id="@+id/total_codt_id"
+                            android:textColor="#ffffff"
+                            android:layout_gravity="center"
+
+                            />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.50"
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="7"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.50"
+                    />
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#602B608A"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true"
+                    app:cardPreventCornerOverlap="true"
+                    android:layout_weight="1.95"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+
+                            android:background="@drawable/current_time_icon"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Current Time,Date"
+                            android:id="@+id/current_time_date_id"
+                            android:textColor="#ffffff"
+                            android:layout_gravity="center"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Time"
+                            android:id="@+id/time_id"
+                            android:textColor="#ffffff"
+                            android:layout_gravity="center"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Date"
+                            android:id="@+id/date_id"
+                            android:textColor="#ffffff"
+                            android:layout_gravity="center"
+
+                            />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".10"
+                    />
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#602B608A"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true"
+                    app:cardPreventCornerOverlap="true"
+                    android:layout_weight="1.95"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                           android:background="@drawable/deliver_time_icon"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Delivery Time,Date"
+                            android:textColor="#ffffff"
+                            android:id="@+id/delivery_timeDate_id"
+                            android:layout_gravity="center"
+
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="delivery Time"
+                            android:id="@+id/delivery_time_details_id"
+                            android:textColor="#ffffff"
+                            android:layout_gravity="center"
+
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="deivery Date"
+                            android:id="@+id/delivery_date_details_id"
+                            android:textColor="#ffffff"
+                            android:layout_gravity="center"
+
+                            />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.50"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="7"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".85"
+                    />
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#602B608A"
+                    app:cardElevation="0dp"
+                    android:clickable="true"
+                    app:cardUseCompatPadding="false"
+                    app:cardPreventCornerOverlap="true"
+                    android:layout_weight="5"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="3.2"
+                        >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ImageButton
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/change_time_id"
+                                android:background="@drawable/change_time_icon_new" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            >
+                          <ImageButton
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:id="@+id/shaking_id"
+                              android:text="hellow"
+                              android:background="@android:color/transparent"
+                              />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+                            <ImageButton
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/send_message_id"
+                                 android:background="@drawable/message_send_icon_new"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.12"
+                    />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

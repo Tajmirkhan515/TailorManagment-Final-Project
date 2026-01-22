@@ -1,0 +1,890 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tajmirkhan.tailormanagment.PantShirt_ShowAllInformation">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar_id"
+        android:background="#de18b6f2"
+        app:theme="@style/MyToolbarTheme"
+        app:popupTheme="@style/MypopUpTheme"
+
+        >
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <android.support.v7.widget.CardView
+
+                app:cardCornerRadius="3dp"
+                android:layout_weight="1.50"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#de18b6f2"
+
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginRight="10dp"
+                        android:weightSum="5"
+                        >
+
+                        <ImageView
+                            android:id="@+id/us"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/useridicon"
+
+                            android:layout_weight="1"
+                            android:layout_margin="3dp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter User ID"
+                            android:id="@+id/userid_male_texv_id"
+
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginRight="10dp"
+                        android:weightSum="5"
+                        >
+
+                        <ImageView
+                            android:id="@+id/uss"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/usernameicon"
+                            android:layout_weight="1"
+                            android:layout_margin="3dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter USer Name"
+                            android:id="@+id/username_male_texv_id"
+
+                            />
+
+
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginRight="10dp"
+                        android:weightSum="5"
+                        >
+
+                        <ImageView
+                            android:id="@+id/usss"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/phonenumbericon"
+                            android:layout_weight="1"
+                            android:layout_margin="3dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter Phone Number"
+                            android:inputType="number"
+                            android:id="@+id/phone_male_texv_id"
+
+                            />
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.CardView
+
+                app:cardCornerRadius="3dp"
+
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginRight="10dp"
+                        android:weightSum="5"
+                        >
+
+                        <ImageButton
+                            android:id="@+id/shirtneck_pic_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/neckicon"
+                            android:layout_weight="1"
+                            android:layout_margin="3dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="    Enter Neck"
+                             android:layout_weight="4"
+                                android:id="@+id/shirtneck_id"
+                                />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+
+                        android:weightSum="5"
+                        >
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="3dp"
+
+                            android:id="@+id/shirtchest_pic_id"
+                            android:background="@drawable/chesticon" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="     Enter Chest"
+                                android:lines="1"
+                                android:layout_weight="4"
+                                android:id="@+id/shirtchest_id"
+                                />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+
+                        android:weightSum="5"
+                        >
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="3dp"
+
+                            android:id="@+id/shirtshoulder_pic_id"
+                            android:background="@drawable/shouldericon" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="     Enter Shoulder"
+                                android:lines="1"
+                                android:layout_weight="4"
+
+                                android:id="@+id/shirtshoulder_id"
+                                />
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+
+                        android:weightSum="5"
+                        >
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="3dp"                                            android:onClick="capture"
+
+                            android:id="@+id/shirtslevee_pic_id"
+                            android:background="@drawable/sleeve" />
+
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="      Enter sleeve"
+                                android:lines="1"
+                                android:layout_weight="4"
+
+                                android:id="@+id/shirtsleeve_id"
+                                />
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+
+                        android:weightSum="5"
+                        >
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="3dp"
+                            android:id="@+id/shirtbicep_pic_id"
+                            android:background="@drawable/bicep"
+                            />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="      Enter Bicep"
+                                android:lines="1"
+                                android:id="@+id/shirtbicep_id"
+                                />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+
+                        android:weightSum="5"
+                        >
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/lengthofwristicon"
+                            android:id="@+id/shirtlenthofwrist_pic_id"
+
+                            />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="      Length of wrist"
+                                android:lines="1"
+                                android:layout_weight="4"
+                                android:id="@+id/shirtwrist_id"
+                                />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+
+                        android:weightSum="5"
+                        >
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/abdomen_icon"
+                            android:id="@+id/shirtjocketwaist_pic_id"
+
+                            />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="     Enter Jocket waist"
+                                android:lines="1"
+                                android:layout_weight="4"
+
+                                android:id="@+id/shirtjoecktwaist_id"
+                                />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+
+                        android:weightSum="5"
+                        >
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/hipicon"
+                            android:id="@+id/shirthip_pic_id"
+
+                            />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="      Enter Hip"
+                                android:layout_weight="4"
+                                android:id="@+id/shirthip_id"
+                                />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+
+                        android:weightSum="5"
+                        >
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/lengthicon"
+                            android:id="@+id/shirtlength_pic_id"
+
+                            />
+
+
+                            <TextView
+                                android:id="@+id/shirtlength_id"
+                                android:layout_width="match_parent"
+                                android:layout_weight="4"
+
+                                android:layout_height="wrap_content"
+                                android:hint="      Enter Length" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+
+                        android:weightSum="5"
+                        >
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/waist_icon"
+                            android:id="@+id/shirtwasit_pic_id"
+
+                            />
+
+                            <TextView
+                                android:layout_weight="4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="      Enter waist"
+                                android:id="@+id/shirtwaist_id"
+                                />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+
+                        android:weightSum="5"
+                        >
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="3dp"
+
+                            android:background="@drawable/halfshoulder_icon"
+                            android:id="@+id/shirthalfshoulder_pic_id"
+                            />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="      Enter Half shoulder"
+                                android:layout_weight="4"
+
+                                android:id="@+id/shirthalfshoulder_id"
+                                />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+
+                        android:weightSum="5"
+                        >
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/backfulllengthicon"
+                            android:id="@+id/shirtbackfulllength_pic_id"
+
+                            />
+
+                            <TextView
+                                android:layout_weight="4"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="   Enter Back full Length "
+                                android:id="@+id/shirtbackfulllength_id"
+                                />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+
+                        android:weightSum="5"
+                        >
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/backhalflength"
+                            android:id="@+id/shirtbackhalflength_pic_id"
+
+                            />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+
+                                android:hint="      Half Back length"
+                                android:id="@+id/shirtbackhalflength_id"
+                                />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+
+                app:cardCornerRadius="3dp"
+                android:paddingBottom="@dimen/cardview_compat_inset_shadow"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+
+                        android:weightSum="5"
+                        >
+
+                        <ImageButton
+                            android:id="@+id/pantwaist_pic_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/trouserwaisticon"
+                            />
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="      pant waist"
+                            android:layout_weight="4"
+
+                            android:id="@+id/pantwaist_id"
+                                />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+
+                        android:weightSum="5"
+                        >
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="3dp"
+                            android:id="@+id/pantlength_pic_id"
+
+                            android:background="@drawable/trouserlength" />
+
+
+                            <TextView
+                                android:layout_weight="4"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="      Trouser Length"
+                                android:id="@+id/pantlength_id"
+                                />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+
+                        android:weightSum="5"
+                        >
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/insidepant_icon"
+                            android:id="@+id/pantinsidelength_pic_id"
+
+                            />
+
+                            <TextView
+                                android:layout_weight="4"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="      pant inside length"
+                                android:id="@+id/pantinsidelength_id"
+                                />
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+
+                        android:weightSum="5"
+                        >
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/croach_icon"
+                            android:id="@+id/pantcrotch_pic_id"
+
+                            />
+
+                            <TextView
+                                android:layout_weight="4"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="      pant Crotch"
+                                android:id="@+id/pantcrotch_id"
+                                />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+
+                        android:weightSum="5"
+                        >
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/thighicon"
+                            android:id="@+id/pantthigh_pic_id"
+
+                            />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+
+                                android:hint="      pant thigh"
+                                android:id="@+id/pantthigh_id"
+                                />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+
+                        android:weightSum="5"
+                        >
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/knee_icon"
+                            android:id="@+id/pantknee_pic_id"
+
+                            />
+
+
+                            <TextView
+                                android:layout_weight="4"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="      pant knee"
+                                android:id="@+id/pantknee_id"
+                                />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.CardView
+
+                app:cardCornerRadius="3dp"
+                android:paddingBottom="@dimen/cardview_compat_inset_shadow"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+
+                        >
+
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/ben_icon"
+                                android:id="@+id/shirt_rd_bin_pic_id"
+
+                                />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pantshir_bin_collor_id"
+                        />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/front_pocket_icon"
+                                android:id="@+id/shirt_frontpacket_rdio_pic_id"
+
+                                />
+
+                            <TextView
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/pant_front_packet_id"
+                                android:text=" Front Packet"
+
+                                />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+
+                app:cardCornerRadius="3dp"
+                android:paddingBottom="@dimen/cardview_compat_inset_shadow"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+
+                        android:weightSum="5"
+                        >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_margin="3dp"
+                                android:background="@drawable/description"
+                                android:id="@+id/pantdescription_pic_id"
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="      Write Description"
+                                    android:inputType="textCapSentences|textMultiLine"
+                                    android:maxLength="50"
+                                    android:maxLines="10"
+                                    android:height="100dp"
+                                    android:id="@+id/pantdescription_id"
+                                    />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

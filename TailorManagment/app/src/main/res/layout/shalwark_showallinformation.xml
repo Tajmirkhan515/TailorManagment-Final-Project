@@ -1,0 +1,789 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#de18b6f2"
+    tools:context="com.tajmirkhan.tailormanagment.ShalwarK_ShowAllInformation">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar_id"
+        android:background="#de18b6f2"
+        app:theme="@style/MyToolbarTheme"
+        app:popupTheme="@style/MypopUpTheme"
+
+        >
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical"
+         >
+
+    <android.support.v7.widget.CardView
+
+        app:cardCornerRadius="3dp"
+        android:layout_weight="1.50"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#de18b6f2"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp"
+                android:weightSum="5"
+                >
+
+                <ImageView
+                    android:id="@+id/us"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/useridicon"
+
+                    android:layout_weight="1"
+                    android:layout_margin="3dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter User ID"
+                        android:id="@+id/userid_male_texv_id"
+
+                        />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp"
+                android:weightSum="5"
+                >
+
+                <ImageView
+                    android:id="@+id/uss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/usernameicon"
+                    android:layout_weight="1"
+                    android:layout_margin="3dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter USer Name"
+                        android:id="@+id/username_male_texv_id"
+
+                        />
+
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp"
+                android:weightSum="5"
+                >
+
+                <ImageView
+                    android:id="@+id/usss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/phonenumbericon"
+                    android:layout_weight="1"
+                    android:layout_margin="3dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Phone Number"
+                        android:inputType="number"
+                        android:id="@+id/phone_male_texv_id"
+
+                        />
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+
+        <android.support.v7.widget.CardView
+
+            app:cardCornerRadius="3dp"
+
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="10dp"
+                    android:weightSum="5"
+                    >
+
+                    <ImageButton
+                        android:id="@+id/kameezlength_pic_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/lengthicon"
+                        android:layout_weight="1"
+                        android:layout_margin="3dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="    Enter Length"
+                            android:layout_weight="4"
+                            android:textStyle="bold"
+                            android:id="@+id/kameezlength_id"
+                            />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+
+                    android:weightSum="5"
+                    >
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="3dp"
+                        android:id="@+id/kameezsleeve_pic_id"
+                        android:background="@drawable/sleeve" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:textStyle="bold"
+                            android:lines="1"
+                            android:id="@+id/kameezsleeve_id"
+                            />
+
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+
+                    android:weightSum="5"
+                    >
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="3dp"
+                        android:id="@+id/kameezshoulder_pic_id"
+                        android:background="@drawable/shouldericon" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="     Enter Shoulder"
+                            android:layout_weight="4"
+                            android:lines="1"
+                            android:id="@+id/kameezshoulder_id"
+                            />
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+
+                    android:weightSum="5"
+                    >
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="3dp"
+                        android:id="@+id/kameezchest_pic_id"
+                        android:background="@drawable/chesticon" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="     Enter Chest"
+                            android:layout_weight="4"
+                            android:lines="1"
+                            android:id="@+id/kameezchest_id"
+                            />
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+
+                    android:weightSum="5"
+                    >
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/minda_icon"
+                        android:id="@+id/kameezminda_pic_id"
+                        />
+
+
+                        <TextView
+                            android:id="@+id/kameezunderarm_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="      underarm"
+                            android:layout_weight="4"
+                            />
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+
+                    android:weightSum="5"
+                    >
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="3dp"
+                        android:id="@+id/kameezneck_pic_id"
+                        android:background="@drawable/neckicon" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="      Enter Neck"
+                            android:lines="1"
+                            android:layout_weight="4"
+                            android:id="@+id/kameezneck_id"
+                            />
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+
+                    android:weightSum="5"
+                    >
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/waist_icon"
+                        android:id="@+id/kameezwaist_pic_id"
+                        />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="      waist"
+                            android:layout_weight="4"
+                            android:lines="1"
+                            android:id="@+id/kameezwaist_id"
+                            />
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+
+                    android:weightSum="5"
+                    >
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/width_icon"
+                        android:id="@+id/kameezwidth_pic_id"
+                        />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="      Width"
+                            android:lines="1"
+                            android:layout_weight="4"
+                            android:id="@+id/kameezwidth_id"
+                            />
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+
+                    android:weightSum="5"
+                    >
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/abdomen_icon"
+                        android:id="@+id/kameezabdomen_pic_id"
+                        />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="      abdomen"
+                            android:layout_weight="4"
+                            android:id="@+id/kameezabdomen_id"
+                            />
+
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+
+                    android:weightSum="5"
+                    >
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/bicep"
+                        android:id="@+id/kameezbicep_pic_id"
+                        />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="      Bicep"
+                            android:layout_weight="4"
+                            android:id="@+id/kameezbicep_id"
+                            />
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+
+                    android:weightSum="5"
+                    >
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/lengthofwristicon"
+                        android:id="@+id/kameezlengthofwristwrist_pic_id"
+                        />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="      Length of Wrist"
+                            android:layout_weight="4"
+                            android:id="@+id/kameezwrist_id"
+                            />
+
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+
+            app:cardCornerRadius="3dp"
+            android:paddingBottom="@dimen/cardview_compat_inset_shadow"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+
+                    android:weightSum="5"
+                    >
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="3dp"
+                        android:id="@+id/shalwarlength_pic_id"
+                        android:background="@drawable/trouserlength" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="      Trouser length"
+                            android:layout_weight="4"
+                            android:id="@+id/shalwarlength_id"
+                            />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+
+                    android:weightSum="5"
+                    >
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="3dp"
+                        android:id="@+id/shalwarwaist_pic_id"
+
+                        android:background="@drawable/trouserwaisticon" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="      Trouser Waist"
+                            android:id="@+id/shalwarwaist_id"
+                            android:layout_weight="4"
+                            />
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+
+                    android:weightSum="5"
+                    >
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/pancha"
+                        android:id="@+id/shalwarpancha_pic_id"
+                        />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="      pancha"
+
+                            android:id="@+id/shalwarpancha_id"
+                            />
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+        <android.support.v7.widget.CardView
+
+            app:cardCornerRadius="3dp"
+            android:paddingBottom="@dimen/cardview_compat_inset_shadow"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+
+                    >
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:id="@+id/shalwarkameezben_pic_id"
+                            android:background="@drawable/ben_icon"
+                            />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/shalwarkameez_ben_texv_id"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:id="@+id/kameezfrontpacket_pic_id"
+                            android:background="@drawable/front_pocket_icon"
+                            />
+
+                        <TextView
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  Front Packet"
+                            android:id="@+id/shalwarkameez_frontpacket_id"
+                            />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:id="@+id/shalwarpacket_pic_id"
+                            android:background="@drawable/shalwarpacketicon"
+                            />
+
+                        <TextView
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Shalware Packet"
+                            android:id="@+id/shalwarkameez_shalwarpacket_id"
+
+                            />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:background="@drawable/side_poket_icon"
+                            android:id="@+id/kameezsidepacket_pic_id"
+                            />
+                        <TextView
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Side Packet"
+                            android:id="@+id/sidepacket_id"
+
+                            />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+
+            app:cardCornerRadius="3dp"
+            android:paddingBottom="@dimen/cardview_compat_inset_shadow"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+
+                    android:weightSum="5"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/description"
+                            android:id="@+id/description_pic_id"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="      Write Description"
+                                android:inputType="textCapSentences|textMultiLine"
+                                android:maxLength="50"
+                                android:maxLines="10"
+                                android:height="100dp"
+                                android:id="@+id/shalwarkameezdescription_id"
+                                />
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+     </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
