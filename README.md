@@ -38,12 +38,6 @@ It tracks each order with a specific shelf number for easy storage and retrieval
 
 ---
 
-## 📱 Application Screenshots
-
-> Below are selected screenshots from the application UI.
-
-### Splash Screen
-![Splash Screen]([Assets/screenshots/splash.png](https://github.com/Tajmirkhan515/TailorManagment-Final-Project/blob/main/splashscreen.png))
 
 
 
